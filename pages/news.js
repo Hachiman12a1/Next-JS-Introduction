@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-function HomePage(props) {
+function NewsPage(props) {
   return (
     <h1>
-      Home Page
+      News Page
     </h1>
   );
 }
 
-export default HomePage;
+export default NewsPage;
