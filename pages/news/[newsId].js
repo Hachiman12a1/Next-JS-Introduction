@@ -1,7 +1,13 @@
 import React from 'react';
+import {useRouter} from 'next/router'
 
+function DetailPage(props) {
+  const router = useRouter();
 
-function DeailPage(props) {
+  const newsId = router.query.newsId;
+  console.log(newsId);
+  // send a request to the backend API
+  // to fetch the news item with newsId
   return (
     <h1>
       Detail Page
@@ -9,4 +15,4 @@ function DeailPage(props) {
   );
 }
 
-export default DeailPage;
+export default DetailPage;
